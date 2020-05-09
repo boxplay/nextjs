@@ -11,13 +11,6 @@ Sentry.init({
 });
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    return {
-      pageProps: Component.getInitialProps
-        ? await Component.getInitialProps(ctx)
-        : {}
-    };
-  }
 
   componentDidCatch(error, errorInfo) {
     Sentry.withScope(scope => {
