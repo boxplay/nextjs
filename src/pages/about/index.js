@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import classNames from 'classnames/bind';
 import { connect } from 'react-redux';
-import Nav from '../../components/nav';
 import css from './styles.styl';
 
 const cx = classNames.bind(css);
