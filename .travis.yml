@@ -4,4 +4,4 @@ node_js:
 install:
   - yarn --frozen-lockfile
 script:
-  - npm run dev
+  - npm run build:test
